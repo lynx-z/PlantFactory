@@ -1,3 +1,3 @@
 # PlantFactory
 
-This is my last college year dissertation in University of Nottingham
+This is my final year dissertation in University of Nottingham
