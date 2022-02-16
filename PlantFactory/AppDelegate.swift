@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import SafariServices
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {

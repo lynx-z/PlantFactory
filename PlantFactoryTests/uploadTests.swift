@@ -6,7 +6,7 @@
 //
 
 import XCTest
-@testable import upload
+@testable import PlantFactory
 
 class uploadTests: XCTestCase {
 
