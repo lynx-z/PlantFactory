@@ -40,6 +40,10 @@ class ModelLibraryView: UIViewController, SFSafariViewControllerDelegate{
         self.safariVC.view.leadingAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.leadingAnchor).isActive = true
         self.safariVC.view.trailingAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.trailingAnchor).isActive = true
         
+        // set bar color
+        self.safariVC.preferredControlTintColor = UIColor.clear
+        self.safariVC.preferredBarTintColor = UIColor.clear
+        
         
     }
     

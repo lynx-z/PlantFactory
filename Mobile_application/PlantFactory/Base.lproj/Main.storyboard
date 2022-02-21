@@ -17,6 +17,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="tintColor">
+                                <color key="value" red="0.16823484898675672" green="0.4988515973" blue="0.27560662437459416" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
                     </tabBar>
                     <connections>
                         <segue destination="HE5-rL-aHS" kind="relationship" relationship="viewControllers" id="SXW-JQ-hsI"/>
@@ -31,7 +36,14 @@
         <scene sceneID="9Fd-bn-Bg8">
             <objects>
                 <navigationController id="IMC-Cm-sAe" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Model generation" image="square.and.arrow.up" catalog="system" id="DRA-Jc-Gq9"/>
+                    <tabBarItem key="tabBarItem" title="Model generation" image="square.and.arrow.up" catalog="system" id="DRA-Jc-Gq9">
+                        <color key="badgeColor" red="0.41963082550000003" green="0.4988515973" blue="0.42351964120000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="tintColor">
+                                <color key="value" systemColor="systemGreenColor"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </tabBarItem>
                     <navigationBar key="navigationBar" alpha="0.0" contentMode="scaleToFill" id="zq3-GQ-6x6">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -51,9 +63,19 @@
         <scene sceneID="oUy-MN-E3v">
             <objects>
                 <navigationController navigationBarHidden="YES" id="HE5-rL-aHS" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Model library" image="book.closed" catalog="system" id="XJw-fS-PtR"/>
+                    <tabBarItem key="tabBarItem" title="Model library" image="book.closed" catalog="system" id="XJw-fS-PtR">
+                        <color key="badgeColor" red="0.41963082550000003" green="0.4988515973" blue="0.42351964120000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    </tabBarItem>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="WDB-CR-uBv">
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" red="0.41963082550000003" green="0.4988515973" blue="0.42351964120000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="barTintColor" red="0.41963082550000003" green="0.4988515973" blue="0.42351964120000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" red="0.41963082550000003" green="0.4988515973" blue="0.42351964120000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        </textAttributes>
+                        <textAttributes key="largeTitleTextAttributes">
+                            <color key="textColor" red="0.41963082550000003" green="0.4988515973" blue="0.42351964120000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        </textAttributes>
                     </navigationBar>
                     <connections>
                         <segue destination="J1D-1a-Dpc" kind="relationship" relationship="rootViewController" id="x4Y-K3-RAe"/>
@@ -134,6 +156,9 @@
         </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

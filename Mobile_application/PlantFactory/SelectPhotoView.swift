@@ -48,10 +48,12 @@ class SelectPhotoView: UIViewController, UIImagePickerControllerDelegate, UINavi
         flowLayout.sectionInset = UIEdgeInsets(top: 10, left: 10, bottom: 10, right: 10)
         flowLayout.itemSize = CGSize(width: 300, height: 300)
 
+
         collectionView = UICollectionView(frame: CGRect(x: 20, y: 120, width: view.frame.size.width - 40, height: 300), collectionViewLayout: flowLayout)
         collectionView.dataSource = self
         collectionView.delegate = self
 //        collectionView.backgroundColor = UIColor.blue
+//        collectionView.backgroundView = UIImageView(image:UIImage(named: "test.png"))
         collectionView.alwaysBounceHorizontal = true
         collectionView.register(ImageCell.self, forCellWithReuseIdentifier: identifier)
         view.addSubview(collectionView)
