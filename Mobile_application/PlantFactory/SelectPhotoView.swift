@@ -17,10 +17,16 @@ class SelectPhotoView: UIViewController, UIImagePickerControllerDelegate, UINavi
     private let identifier: String = "identifier"
     private var selectedImages: [UIImage] = []
  
+    @IBOutlet weak var background_img: UIImageView!
     
     //select photos
     @IBAction func select_btn(_ sender: UIButton) {
         sender.addTarget(self, action: #selector(selectImages), for: .touchUpInside)
+    }
+    
+    // help
+    @IBAction func help_btn(_ sender: Any) {
+        self.performSegue(withIdentifier: "helpScreen", sender: self)
         
     }
     
@@ -52,6 +58,7 @@ class SelectPhotoView: UIViewController, UIImagePickerControllerDelegate, UINavi
         collectionView = UICollectionView(frame: CGRect(x: 20, y: 120, width: view.frame.size.width - 40, height: 300), collectionViewLayout: flowLayout)
         collectionView.dataSource = self
         collectionView.delegate = self
+        collectionView.backgroundColor = UIColor.clear
 //        collectionView.backgroundColor = UIColor.blue
 //        collectionView.backgroundView = UIImageView(image:UIImage(named: "test.png"))
         collectionView.alwaysBounceHorizontal = true
@@ -151,6 +158,10 @@ class SelectPhotoView: UIViewController, UIImagePickerControllerDelegate, UINavi
     }
      
     @objc private func selectImages(sender: UITapGestureRecognizer) {
+        
+        // hide background
+        background_img.tintColor = UIColor.clear
+        
         let imagePicker = ImagePickerController()
         presentImagePicker(imagePicker, select: { (asset) in
         }, deselect: { (asset) in

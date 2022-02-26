@@ -52,7 +52,7 @@
                         <autoresizingMask key="autoresizingMask"/>
                     </toolbar>
                     <connections>
-                        <segue destination="TR5-Qn-zA2" kind="relationship" relationship="rootViewController" id="r9G-v4-SCh"/>
+                        <segue destination="TR5-Qn-zA2" kind="relationship" relationship="rootViewController" id="pK7-zn-bfb"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="33A-pS-dex" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -83,7 +83,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Izv-h2-Mo3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1934" y="379"/>
+            <point key="canvasLocation" x="-1935" y="379"/>
         </scene>
         <!--Model Generation-->
         <scene sceneID="1vn-Mb-qGz">
@@ -96,25 +96,54 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mO9-6t-78i">
                                 <rect key="frame" x="150" y="451" width="75" height="66"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" red="0.16823484899999999" green="0.4988515973" blue="0.2756066244" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" image="camera.circle.fill" catalog="system" title="">
+                                <buttonConfiguration key="configuration" style="plain" image="plus.circle.fill" catalog="system" title="">
                                     <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="pointSize" pointSize="45" scale="default"/>
-                                    <color key="baseForegroundColor" red="0.0" green="0.58980089430000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="baseForegroundColor" red="0.16823484899999999" green="0.4988515973" blue="0.2756066244" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </buttonConfiguration>
                                 <connections>
                                     <action selector="select_btn:" destination="TR5-Qn-zA2" eventType="touchUpInside" id="cQm-ZT-5ty"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r8N-8e-Lkb">
-                                <rect key="frame" x="103" y="525" width="168" height="42"/>
+                                <rect key="frame" x="77" y="525" width="220" height="51"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.0" green="0.58980089430000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.16823484899999999" green="0.4988515973" blue="0.2756066244" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title=" Upload photos">
-                                    <color key="baseForegroundColor" systemColor="secondarySystemGroupedBackgroundColor"/>
+                                <buttonConfiguration key="configuration" style="plain" title=" Upload  and Generate">
+                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <action selector="upload_btn:" destination="TR5-Qn-zA2" eventType="touchUpInside" id="2l9-zi-0pr"/>
+                                    <action selector="upload_btn:" destination="TR5-Qn-zA2" eventType="touchUpInside" id="LEq-50-G3a"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="photo" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="WdC-Xq-rT2">
+                                <rect key="frame" x="67" y="214" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="kAw-Qe-45M">
+                                <rect key="frame" x="52" y="63" width="271" height="133"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <string key="text">Please take photos around the plant.
+After images uploaded, wait a few minutes and the model will automatically display in the Model Library</string>
+                                <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zmb-a0-wKm">
+                                <rect key="frame" x="331" y="76" width="19" height="27"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" red="0.16823484899999999" green="0.4988515973" blue="0.2756066244" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="questionmark.circle" catalog="system">
+                                    <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="pointSize" pointSize="17" scale="default"/>
+                                    <color key="baseForegroundColor" red="0.16823484899999999" green="0.4988515973" blue="0.2756066244" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="help_btn:" destination="TR5-Qn-zA2" eventType="touchUpInside" id="7Hh-dQ-0cF"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -123,12 +152,41 @@
                     </view>
                     <navigationItem key="navigationItem" title="Model Generation" id="jVt-2f-cFb"/>
                     <connections>
-                        <outlet property="upload_btn" destination="r8N-8e-Lkb" id="siK-ne-6dc"/>
+                        <outlet property="background_img" destination="WdC-Xq-rT2" id="pzL-cx-8sX"/>
+                        <outlet property="upload_btn" destination="r8N-8e-Lkb" id="0ZP-N9-aGK"/>
+                        <segue destination="RH1-Ks-h8B" kind="showDetail" identifier="helpScreen" id="zCW-j7-733"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oN5-TE-Xhi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1002.4" y="1074.5127436281859"/>
+            <point key="canvasLocation" x="-1002.4" y="1126.6866566716642"/>
+        </scene>
+        <!--Help View-->
+        <scene sceneID="b5C-Iv-1hz">
+            <objects>
+                <viewController id="RH1-Ks-h8B" customClass="HelpView" customModule="PlantFactory" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="05g-6I-arb">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wpe-La-C0O">
+                                <rect key="frame" x="16" y="30" width="70" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" red="0.16823484899999999" green="0.4988515973" blue="0.2756066244" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Done"/>
+                                <connections>
+                                    <action selector="helpBack_btn:" destination="RH1-Ks-h8B" eventType="touchUpInside" id="VXY-AT-Yf6"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="yQS-Iq-aBQ"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="b2b-Xd-dee" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-162.40000000000001" y="1126.6866566716642"/>
         </scene>
         <!--Model Library-->
         <scene sceneID="ZGl-b9-PJi">
@@ -144,16 +202,15 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5Ju-1B-1yg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1935" y="1075"/>
+            <point key="canvasLocation" x="-1935" y="1127"/>
         </scene>
     </scenes>
     <resources>
         <image name="book.closed" catalog="system" width="115" height="128"/>
-        <image name="camera.circle.fill" catalog="system" width="128" height="121"/>
+        <image name="photo" catalog="system" width="128" height="93"/>
+        <image name="plus.circle.fill" catalog="system" width="128" height="121"/>
+        <image name="questionmark.circle" catalog="system" width="128" height="121"/>
         <image name="square.and.arrow.up" catalog="system" width="115" height="128"/>
-        <systemColor name="secondarySystemGroupedBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

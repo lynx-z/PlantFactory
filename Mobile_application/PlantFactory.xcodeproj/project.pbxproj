@@ -21,6 +21,7 @@
 		9B1D51712759CC9300C82AE8 /* uploadUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B1D51702759CC9300C82AE8 /* uploadUITestsLaunchTests.swift */; };
 		9B5CF38F27B7DC9000F22961 /* SelectPhotoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B5CF38E27B7DC8F00F22961 /* SelectPhotoView.swift */; };
 		9B5CF39127B7E72700F22961 /* ModelLibraryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B5CF39027B7E72700F22961 /* ModelLibraryView.swift */; };
+		9B9BEDE627CA0EEF008B4590 /* HelpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B9BEDE527CA0EEF008B4590 /* HelpView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +61,7 @@
 		9B1D51702759CC9300C82AE8 /* uploadUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = uploadUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		9B5CF38E27B7DC8F00F22961 /* SelectPhotoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectPhotoView.swift; sourceTree = "<group>"; };
 		9B5CF39027B7E72700F22961 /* ModelLibraryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelLibraryView.swift; sourceTree = "<group>"; };
+		9B9BEDE527CA0EEF008B4590 /* HelpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpView.swift; sourceTree = "<group>"; };
 		AACA8B101FB66E7AFA8678FC /* Pods-upload-uploadUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-upload-uploadUITests.release.xcconfig"; path = "Target Support Files/Pods-upload-uploadUITests/Pods-upload-uploadUITests.release.xcconfig"; sourceTree = "<group>"; };
 		C1A0EA9125009B3FAF93F4D1 /* Pods_upload_uploadUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_upload_uploadUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E30A107F30608DAD0F4BA7B0 /* Pods-upload.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-upload.release.xcconfig"; path = "Target Support Files/Pods-upload/Pods-upload.release.xcconfig"; sourceTree = "<group>"; };
@@ -129,6 +131,7 @@
 				9B1D515B2759CC9300C82AE8 /* Info.plist */,
 				9B5CF38E27B7DC8F00F22961 /* SelectPhotoView.swift */,
 				9B5CF39027B7E72700F22961 /* ModelLibraryView.swift */,
+				9B9BEDE527CA0EEF008B4590 /* HelpView.swift */,
 			);
 			path = PlantFactory;
 			sourceTree = "<group>";
@@ -413,6 +416,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9B5CF39127B7E72700F22961 /* ModelLibraryView.swift in Sources */,
+				9B9BEDE627CA0EEF008B4590 /* HelpView.swift in Sources */,
 				9B1D51522759CC9100C82AE8 /* ViewController.swift in Sources */,
 				9B5CF38F27B7DC9000F22961 /* SelectPhotoView.swift in Sources */,
 				9B1D514E2759CC9100C82AE8 /* AppDelegate.swift in Sources */,

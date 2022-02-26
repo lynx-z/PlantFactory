@@ -42,7 +42,7 @@ class ModelLibraryView: UIViewController, SFSafariViewControllerDelegate{
         
         // set bar color
         self.safariVC.preferredControlTintColor = UIColor.clear
-        self.safariVC.preferredBarTintColor = UIColor.clear
+//        self.safariVC.preferredBarTintColor = UIColor.white
         
         
     }
